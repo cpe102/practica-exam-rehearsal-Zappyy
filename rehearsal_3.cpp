@@ -1,12 +1,24 @@
-#include <iostream>
+#include<iostream>
+#include<cmath>
+using namespace std;
+double sumSqrt(double N)
+{
+	int i=1;
+	double sum=0;
+	while(N>=i)
+	{
+		sum = sum+1/pow(i,0.5);
+		i++;
+	}
+		return sum;
+}
 
-//Write sumSqrt() here.
 
 
 int main()
 {
-    double a = sumSqrt(20);
-    double b = sumSqrt(10);
+    double a = sumSqrt(-5);
+    double b = sumSqrt(3);
     double c = sumSqrt(5);
     double d = sumSqrt(2);
     double e = sumSqrt(1);
